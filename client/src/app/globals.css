@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+/* Tailwind 4 Theme Configuration 
+   We map the default 'font-sans' utility to our Poppins variable.
+*/
+@theme {
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  /* Default Next.js theme vars */
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* Primary Color - #F38A00 (Orange) Scale */
+  --primary-50: #fff8ed;
+  --primary-100: #ffefd3;
+  --primary-200: #ffdaa6;
+  --primary-300: #ffbf70;
+  --primary-400: #ff9d33;
+  --primary-500: #f38a00; /* Base */
+  --primary-600: #d66e00;
+  --primary-700: #aa5100;
+  --primary-800: #884005;
+  --primary-900: #6e350a;
+  --primary-950: #3f1a02;
+
+  /* Secondary Color - #004E89 (Blue) Scale */
+  --secondary-brand-50: #eff8ff;
+  --secondary-brand-100: #dbeafe;
+  --secondary-brand-200: #bfdbfe;
+  --secondary-brand-300: #93c5fd;
+  --secondary-brand-400: #60a5fa;
+  --secondary-brand-500: #3b82f6;
+  --secondary-brand-600: #004e89; /* Base */
+  --secondary-brand-700: #003d6e;
+  --secondary-brand-800: #00335c;
+  --secondary-brand-900: #002b4d;
+  --secondary-brand-950: #001a33;
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  /* font-family is automatically handled by the @theme configuration above */
+}
