@@ -24,7 +24,7 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="relative py-24 md:py-32 bg-black text-white overflow-hidden"
+      className="relative py-24 md:py-32 bg-[#4b0d70] text-white overflow-hidden"
     >
       {/* GLOBAL LIGHT SWEEP */}
       <motion.span
@@ -68,7 +68,7 @@ const ContactSection = () => {
           {/* RIGHT SIDE FORM */}
           <motion.div
             variants={itemVariants}
-            className="bg-[var(--primary-500)] p-8 rounded-sm shadow-xl"
+            className="bg-[#f4eb82] p-8 rounded-sm shadow-xl"
           >
             <form className="space-y-5">
               {/* Full Name */}
@@ -102,7 +102,7 @@ const ContactSection = () => {
               {/* Button */}
               <button
                 type="submit"
-                className="w-full py-3 mt-4 bg-[var(--primary-800)] text-white font-semibold rounded-sm hover:opacity-90 transition"
+                className="w-full py-3 mt-4 bg-[#4b0d70] text-white font-semibold rounded-sm hover:opacity-90 transition"
               >
                 Submit Request
               </button>

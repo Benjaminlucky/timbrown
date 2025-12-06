@@ -69,7 +69,7 @@ const ServicesSection = () => {
   return (
     <section
       id="services"
-      className="relative py-24 md:py-32 bg-black text-white overflow-hidden"
+      className="relative py-24 md:py-32 bg-[#4b0d70]  text-white overflow-hidden"
     >
       {/* Soft sweeping highlight (global effect) */}
       <motion.span
@@ -128,8 +128,10 @@ const ServicesSection = () => {
                 />
 
                 {/* Content */}
-                <div className="p-6 text-black">
-                  <h3 className="text-lg font-bold mb-2">{svc.title}</h3>
+                <div className="p-6 ">
+                  <h3 className="text-lg text-[#4b0d70] font-bold mb-2">
+                    {svc.title}
+                  </h3>
                   <p className="text-sm text-gray-700 leading-relaxed">
                     {svc.description}
                   </p>

@@ -91,7 +91,7 @@ const AboutSection = () => {
   const FeatureCard = ({ title, icon: Icon, color }) => {
     return (
       <motion.div
-        className={`relative flex flex-col items-center min-h-[250px] justify-center p-6 space-y-3 overflow-hidden shadow-2xl ${color}`}
+        className={`relative flex flex-col bg-["#4b0d70"] items-center min-h-[250px] justify-center p-6 space-y-3 overflow-hidden shadow-2xl ${color}`}
         variants={itemVariants}
       >
         <div className="relative z-10 p-3 rounded-full bg-white/10">
@@ -167,7 +167,7 @@ const AboutSection = () => {
                 />
 
                 <div className="p-4 text-center">
-                  <p className="text-lg font-bold text-[var(--secondary-brand-700)]">
+                  <p className="text-lg font-bold text-[#4b0d70]">
                     {item.title}
                   </p>
                 </div>

@@ -125,7 +125,7 @@ const Navbar = () => {
                 className={`text-lg font-medium transition-colors duration-200 
                   ${
                     isActive
-                      ? "text-[var(--secondary-brand-600)] font-semibold"
+                      ? "text-[#4b0d70] font-semibold"
                       : "text-gray-600 hover:text-[var(--primary-500)]"
                   }`}
               >

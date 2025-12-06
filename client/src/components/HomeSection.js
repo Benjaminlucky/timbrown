@@ -145,13 +145,13 @@ const HomeSection = () => {
 
       {/* --- 2. Stats Bar Section --- */}
       <motion.div
-        className="relative bg-[var(--primary-500)] py-8 md:py-12 -mt-1 z-20"
+        className="relative bg-[#f4eb82] py-8 md:py-12 -mt-1 z-20"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.8 }}
         viewport={{ once: true, amount: 0.5 }}
       >
-        <div className="container mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-8 text-white">
+        <div className="container mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-8 text-black">
           {stats.map((stat, index) => (
             <motion.div
               key={index}
@@ -161,7 +161,7 @@ const HomeSection = () => {
               transition={{ duration: 0.5, delay: 1 + index * 0.15 }}
               viewport={{ once: true }}
             >
-              <stat.icon className="h-10 w-10 mb-4 text-white/90" />
+              <stat.icon className="h-10 w-10 mb-4 text-[#4b0d70]/90" />
               <div className="text-2xl md:text-3xl font-bold mb-1">
                 {stat.value}
               </div>

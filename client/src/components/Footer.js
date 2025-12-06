@@ -5,7 +5,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="w-full border-t bg-gray-900 text-gray-300 py-4">
+    <footer className="w-full border-t bg-black text-gray-300 py-4">
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between text-sm">
         {/* Left Side */}
         <p className="flex items-center gap-1">

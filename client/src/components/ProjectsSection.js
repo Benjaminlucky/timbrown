@@ -52,7 +52,7 @@ const ProjectsSection = () => {
   return (
     <section
       id="projects"
-      className="relative py-24 md:py-32 bg-[#000] text-white overflow-hidden"
+      className="relative py-24 md:py-32 bg-[#4b0d70] text-white overflow-hidden"
     >
       {/* SWEEP LIGHT EFFECT */}
       <motion.span
@@ -97,7 +97,7 @@ const ProjectsSection = () => {
             <motion.div
               key={i}
               variants={itemVariants}
-              className="bg-[var(--primary-900)] rounded-lg overflow-hidden shadow-xl cursor-pointer 
+              className="bg-[#f4eb82] rounded-lg overflow-hidden shadow-xl cursor-pointer 
               hover:shadow-[var(--primary-brand)]/40 transition-shadow duration-300"
             >
               {/* IMAGE */}
@@ -109,7 +109,7 @@ const ProjectsSection = () => {
 
               {/* TITLE */}
               <div className="p-4 text-center">
-                <p className="text-white font-semibold text-sm md:text-base">
+                <p className="text-[#4b0d70] font-bold text-sm md:text-base">
                   {project.title}
                 </p>
               </div>
