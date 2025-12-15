@@ -91,7 +91,7 @@ const AboutSection = () => {
   const FeatureCard = ({ title, icon: Icon, color }) => {
     return (
       <motion.div
-        className={`relative flex flex-col bg-["#4b0d70"] items-center min-h-[250px] justify-center p-6 space-y-3 overflow-hidden shadow-2xl ${color}`}
+        className={`relative flex flex-col bg-["#192a42"] items-center min-h-[250px] justify-center p-6 space-y-3 overflow-hidden shadow-2xl ${color}`}
         variants={itemVariants}
       >
         <div className="relative z-10 p-3 rounded-full bg-white/10">
@@ -108,11 +108,11 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="relative text-white py-24 md:py-36 overflow-hidden"
+      className="relative text-white bg-[#192a42] py-24 md:py-36 overflow-hidden"
     >
       {/* GLOBAL LIGHT SWEEP */}
       <motion.span
-        className="absolute inset-0 pointer-events-none block bg-gradient-to-r from-transparent via-[var(--primary-500)]/20 to-transparent"
+        className="absolute inset-0 pointer-events-none block bg-gradient-to-r from-transparent via-[#fff]/20 to-transparent"
         animate={{ x: ["-50%", "120%"] }}
         transition={{
           repeat: Infinity,
@@ -167,7 +167,7 @@ const AboutSection = () => {
                 />
 
                 <div className="p-4 text-center">
-                  <p className="text-lg font-bold text-[#4b0d70]">
+                  <p className="text-lg font-bold text-[#192a42]">
                     {item.title}
                   </p>
                 </div>

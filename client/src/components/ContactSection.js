@@ -24,12 +24,12 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="relative py-24 md:py-32 bg-[#4b0d70] text-white overflow-hidden"
+      className="relative py-24 md:py-32 bg-[#192a42] text-white overflow-hidden"
     >
       {/* GLOBAL LIGHT SWEEP */}
       <motion.span
         className="absolute inset-0 pointer-events-none block bg-gradient-to-r
-        from-transparent via-[var(--primary-500)]/20 to-transparent"
+        from-transparent via-[#fff]/20 to-transparent"
         animate={{ x: ["-50%", "120%"] }}
         transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
         style={{
@@ -61,14 +61,17 @@ const ContactSection = () => {
             <div className="space-y-2 text-white/90 text-lg">
               <p>+234 708 691 0605, +234 811 766 8314</p>
               <p>info@timbrown.com</p>
-              <p>Office Address</p>
+              <p>
+                Office Address: Shop F18 road 3 Ikota shopping complex
+                Ajah, Lagos.
+              </p>
             </div>
           </motion.div>
 
           {/* RIGHT SIDE FORM */}
           <motion.div
             variants={itemVariants}
-            className="bg-[#f4eb82] p-8 rounded-sm shadow-xl"
+            className="bg-[#fe8513] p-8 rounded-sm shadow-xl"
           >
             <form className="space-y-5">
               {/* Full Name */}
@@ -102,7 +105,7 @@ const ContactSection = () => {
               {/* Button */}
               <button
                 type="submit"
-                className="w-full py-3 mt-4 bg-[#4b0d70] text-white font-semibold rounded-sm hover:opacity-90 transition"
+                className="w-full py-3 mt-4 bg-[#192a42] text-white font-semibold rounded-sm hover:opacity-90 transition"
               >
                 Submit Request
               </button>

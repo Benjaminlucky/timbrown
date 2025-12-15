@@ -14,6 +14,9 @@ export const metadata = {
   title: "Tim Brown Works & Services - Civil Engineering & Construction",
   description:
     "Delivering sustainable civil engineering, construction, and real estate development projects with integrity, safety, and technical excellence.",
+  icons: {
+    icon: "/timbrownfavicon.jpg",
+  },
 };
 
 export default function RootLayout({ children }) {

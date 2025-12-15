@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 // Import Framer Motion
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const NAVIGATION_LINKS = [
   { name: "Home", href: "#home" },
@@ -99,7 +100,7 @@ const Navbar = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white ${
-        isScrolled ? "shadow-md py-3" : "py-5"
+        isScrolled ? "shadow-md py-2" : "py-3"
       }`}
     >
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
@@ -109,7 +110,11 @@ const Navbar = () => {
             onClick={(e) => handleNavClick(e, "#home")}
             className="text-2xl font-bold tracking-tight text-black hover:text-[var(--secondary-brand-600)] transition-colors"
           >
-            TimBrown
+            <img
+              src="/timbrownLogo.jpg"
+              alt="TimBrown Logo"
+              className="h-22 w-auto "
+            />
           </a>
         </div>
 

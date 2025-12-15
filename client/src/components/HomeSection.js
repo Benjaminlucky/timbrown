@@ -161,11 +161,11 @@ const HomeSection = () => {
               transition={{ duration: 0.5, delay: 1 + index * 0.15 }}
               viewport={{ once: true }}
             >
-              <stat.icon className="h-10 w-10 mb-4 text-[#4b0d70]/90" />
-              <div className="text-2xl md:text-3xl font-bold mb-1">
+              <stat.icon className="h-10 w-10 mb-4 text-[#192a42]" />
+              <div className="text-2xl md:text-3xl text-[#192a42] font-bold mb-1">
                 {stat.value}
               </div>
-              <div className="text-sm md:text-base opacity-80">
+              <div className="text-sm md:text-base text-[#192a42] ">
                 {stat.label}
               </div>
             </motion.div>

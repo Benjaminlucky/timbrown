@@ -69,11 +69,11 @@ const ServicesSection = () => {
   return (
     <section
       id="services"
-      className="relative py-24 md:py-32 bg-[#4b0d70]  text-white overflow-hidden"
+      className="relative py-24 md:py-32 bg-[#192a42]  text-white overflow-hidden"
     >
       {/* Soft sweeping highlight (global effect) */}
       <motion.span
-        className="absolute inset-0 block pointer-events-none bg-gradient-to-r from-transparent via-yellow-300/10 to-transparent"
+        className="absolute inset-0 block pointer-events-none bg-gradient-to-r from-transparent via-white-300/10 to-transparent"
         animate={{ x: ["-40%", "110%"] }}
         transition={{
           repeat: Infinity,
@@ -129,7 +129,7 @@ const ServicesSection = () => {
 
                 {/* Content */}
                 <div className="p-6 ">
-                  <h3 className="text-lg text-[#4b0d70] font-bold mb-2">
+                  <h3 className="text-lg text-[#192a42] font-bold mb-2">
                     {svc.title}
                   </h3>
                   <p className="text-sm text-gray-700 leading-relaxed">

@@ -52,12 +52,12 @@ const ProjectsSection = () => {
   return (
     <section
       id="projects"
-      className="relative py-24 md:py-32 bg-[#4b0d70] text-white overflow-hidden"
+      className="relative py-24 md:py-32 bg-[#192a42] text-white overflow-hidden"
     >
       {/* SWEEP LIGHT EFFECT */}
       <motion.span
         className="absolute inset-0 block pointer-events-none bg-gradient-to-r 
-        from-transparent via-[var(--primary-500)]/20 to-transparent"
+        from-transparent via-[#fff]/20 to-transparent"
         animate={{ x: ["-50%", "120%"] }}
         transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
         style={{
@@ -109,7 +109,7 @@ const ProjectsSection = () => {
 
               {/* TITLE */}
               <div className="p-4 text-center">
-                <p className="text-[#4b0d70] font-bold text-sm md:text-base">
+                <p className="text-[#192a42] font-bold text-sm md:text-base">
                   {project.title}
                 </p>
               </div>

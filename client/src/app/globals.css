@@ -44,12 +44,11 @@
 /* Dark mode overrides */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #4b0d70;
+    --background: #192a42;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: #192a42 !important ;
   /* font-family is automatically handled by the @theme configuration above */
 }
